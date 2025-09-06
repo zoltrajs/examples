@@ -1,0 +1,18 @@
+{
+  "name": "example-default",
+  "version": "0.1.0",
+  "description": "",
+  "main": "./dist/app.js",
+  "scripts": {
+    "dev": "zoltra dev:ts",
+    "start": "zoltra start",
+    "gen-secret": "zoltra gen-secret"
+  },
+  "devDependencies": {
+    "@types/node": "^24.3.1",
+    "typescript": "^5.9.2"
+  },
+  "dependencies": {
+    "zoltra": "^0.1.0-next.4"
+  }
+}

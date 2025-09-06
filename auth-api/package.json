@@ -1,0 +1,19 @@
+{
+  "name": "auth-api-example",
+  "version": "0.1.0",
+  "main": "./dist/app.js",
+  "scripts": {
+    "dev": "zoltra dev:ts",
+    "start": "zoltra start",
+    "gen-secret": "zoltra gen-secret"
+  },
+  "devDependencies": {
+    "@types/jsonwebtoken": "^9.0.10",
+    "@types/node": "^24.3.1",
+    "typescript": "^5.9.2"
+  },
+  "dependencies": {
+    "jsonwebtoken": "^9.0.2",
+    "zoltra": "^0.1.0-next.4"
+  }
+}
