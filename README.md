@@ -36,13 +36,13 @@ This repository contains a curated collection of example projects demonstrating 
 1. **Create a new project**
 
    ```bash
-   npx zoltra create -n <project-name> -t <template-name>
+   npx zoltra@next create -n <project-name> -t <template-name>
    ```
 
    Replace `<project-name>` with your desired project name and `<template-name>` with the name of the template you want to use. For example:
 
    ```bash
-   npx zoltra create -n auth-app -t auth-api
+   npx zoltra@next create -n auth-app -t auth-api
    ```
 
    This will create a new directory with the specified project name and copy the selected template into it. Navigate into the project directory:
