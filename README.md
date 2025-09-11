@@ -5,7 +5,7 @@
   
   ### *A comprehensive collection of example projects and templates built with the Zoltra framework*
   
-  [![npm](https://img.shields.io/npm/v/zoltra?color=2962FF)](https://www.npmjs.com/package/zoltra)
+  [![npm](https://img.shields.io/npm/v/zoltra/next?color=2962FF)](https://www.npmjs.com/package/zoltra)
   [![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?logo=typescript&logoColor=white)](https://typescriptlang.org)
   [![Node.js](https://img.shields.io/badge/Node.js-43853D?logo=node.js&logoColor=white)](https://nodejs.org)
   
@@ -25,10 +25,11 @@ This repository contains a curated collection of example projects demonstrating 
 
 ### 📁 **Available Examples**
 
-| Example                 | Description                                                                        | Tech Stack              | Status   |
-| ----------------------- | ---------------------------------------------------------------------------------- | ----------------------- | -------- |
-| **🔐 Auth API**         | Complete authentication system with JWT tokens, user management, and secure routes | TypeScript, Zoltra, JWT | ✅ Ready |
-| **🏗️ Default Template** | Basic starter template with essential configurations and routing setup             | TypeScript, Zoltra      | ✅ Ready |
+| Example                 | Description                                                                        | Tech Stack                    | Status          |
+| ----------------------- | ---------------------------------------------------------------------------------- | ----------------------------- | --------------- |
+| **🔐 Auth API**         | Complete authentication system with JWT tokens, user management, and secure routes | TypeScript, Zoltra, JWT       | 🔄️ In Progress |
+| **🏗️ Default Template** | Basic starter template with essential configurations and routing setup             | TypeScript, Zoltra            | ✅ Ready        |
+| **🔌 WebSocket Chat**   | Real-time chat application with WebSocket integration and message broadcasting     | TypeScript, Zoltra, WebSocket | ✅ Ready        |
 
 ## 🚀 Quick Start
 

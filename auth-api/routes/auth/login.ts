@@ -1,6 +1,6 @@
 import { defineMiddlewares, IContext, validateBody } from "zoltra";
 
-export const POST = async (context: IContext) => {
+export async function POST(context: IContext) {
   const { username, password } = context.validatedBody;
 
   if (username === "admin" && password === "pass") {
@@ -11,7 +11,7 @@ export const POST = async (context: IContext) => {
   } else {
     context.status(401).json({ error: "Invalid credentials" });
   }
-};
+}
 
 export const middlewares = defineMiddlewares([
   {

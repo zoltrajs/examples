@@ -1,6 +1,6 @@
-# Zoltra Starter
+# Zoltra Starter (Next)
 
-A simple TypeScript web application built with the [Zoltra](https://github.com/zoltrajs/zoltra) framework. This starter project provides a basic API server with CORS enabled and demonstrates fundamental routing patterns.
+A simple TypeScript web application built with the [Zoltra](https://github.com/zoltrajs/zoltra/tree/next). This starter project provides a basic API server with CORS enabled and demonstrates fundamental routing patterns.
 
 ## Prerequisites
 
@@ -22,8 +22,8 @@ A simple TypeScript web application built with the [Zoltra](https://github.com/z
    npm run dev
    ```
 
-2. The server will start on port 8000 (configurable via `.env` file)
-3. Open your browser and visit `http://localhost:8000`
+2. The server will start on port 5000 (configurable via `.env` file)
+3. Open your browser and visit `http://localhost:5000`
 
 ## Available Scripts
 
@@ -48,7 +48,7 @@ Returns a welcome message from the root route.
 **Example:**
 
 ```bash
-curl http://localhost:8000/
+curl http://localhost:5000/
 ```
 
 ### GET /hello
@@ -66,34 +66,25 @@ Returns a simple hello world message.
 **Example:**
 
 ```bash
-curl http://localhost:8000/hello
-```
-
-## Configuration
-
-The application uses environment variables for configuration. Create or modify the [`.env`](.env:1) file:
-
-```
-PORT=8000
+curl http://localhost:5000/hello
 ```
 
 ## Project Structure
 
 - [`app.ts`](app.ts:1) - Main application entry point with route definitions
 - [`routes/index.ts`](routes/index.ts:1) - Default route handler for the root path
-- [`.env`](.env:1) - Environment configuration
 - [`package.json`](package.json:1) - Project dependencies and scripts
 
 ## Usage with JavaScript/Fetch
 
 ```javascript
 // Get welcome message
-fetch("http://localhost:8000/")
+fetch("http://localhost:5000/")
   .then((response) => response.json())
   .then((data) => console.log(data));
 
 // Get hello world message
-fetch("http://localhost:8000/hello")
+fetch("http://localhost:5000/hello")
   .then((response) => response.json())
   .then((data) => console.log(data));
 ```
