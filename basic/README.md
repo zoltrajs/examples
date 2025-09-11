@@ -6,14 +6,6 @@ A simple TypeScript web application built with the [Zoltra](https://github.com/z
 
 - [Node.js](https://nodejs.org/) (v18 or higher)
 
-## Installation
-
-1. Clone or download this project
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
-
 ## Getting Started
 
 1. Start the development server:

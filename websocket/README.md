@@ -14,25 +14,15 @@ This example demonstrates how to use WebSockets in the Zoltra. WebSockets provid
 
 To run this example, follow these steps:
 
-1. Navigate to the example directory:
-   ```bash
-   cd examples/websocket
-   ```
-2. Install dependencies:
-
-   ```bash
-   npm install
-   ```
-
-3. Start the development server:
+1. Start the development server:
 
    ```bash
     npm run dev
    ```
 
-4. Open your browser and navigate to `http://localhost:8000/index.html`
+2. Open your browser and navigate to `http://localhost:8000/index.html`
 
-5. Open multiple browser windows to see real-time communication in action
+3. Open multiple browser windows to see real-time communication in action
 
 ## How It Works
 

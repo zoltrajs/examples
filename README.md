@@ -25,34 +25,37 @@ This repository contains a curated collection of example projects demonstrating 
 
 ### 📁 **Available Templates**
 
-| Example                 | Description                                                                        | Tech Stack                    | Status          |
-| ----------------------- | ---------------------------------------------------------------------------------- | ----------------------------- | --------------- |
-| **🔐 Auth API**         | Complete authentication system with JWT tokens, user management, and secure routes | TypeScript, Zoltra, JWT       | 🔄️ In Progress |
-| **🏗️ Default Template** | Basic starter template with essential configurations and routing setup             | TypeScript, Zoltra            | ✅ Ready        |
-| **🔌 WebSocket Chat**   | Real-time chat application with WebSocket integration and message broadcasting     | TypeScript, Zoltra, WebSocket | ✅ Ready        |
+| Example               | Description                                                                        | Tech Stack                    | Status          |
+| --------------------- | ---------------------------------------------------------------------------------- | ----------------------------- | --------------- |
+| **🔐 Auth API**       | Complete authentication system with JWT tokens, user management, and secure routes | TypeScript, Zoltra, JWT       | 🔄️ In Progress |
+| **🏗️ Basic API**      | Basic starter template with essential configurations and routing setup             | TypeScript, Zoltra            | ✅ Ready        |
+| **🔌 WebSocket Chat** | Real-time chat application with WebSocket integration and message broadcasting     | TypeScript, Zoltra, WebSocket | ✅ Ready        |
 
 ## 🚀 Quick Start
 
-1. **Clone the repository**
+1. **Create a new project**
 
    ```bash
-   git clone https://github.com/zoltrajs/templates.git
-   cd examples
+   npx zoltra create -n <project-name> -t <template-name>
    ```
 
-2. **Choose your example**
+   Replace `<project-name>` with your desired project name and `<template-name>` with the name of the template you want to use. For example:
 
    ```bash
-   cd auth-api  # or any other example directory
+   npx zoltra create -n auth-app -t auth-api
    ```
 
-3. **Install dependencies**
+   This will create a new directory with the specified project name and copy the selected template into it. Navigate into the project directory:
 
    ```bash
-   npm install
+   cd <project-name>
    ```
 
-4. **Run the application**
+2. **That's it!**
+   The CLI will install the necessary dependencies and set up the project for you.
+
+   Start the development server:
+
    ```bash
    npm run dev
    ```

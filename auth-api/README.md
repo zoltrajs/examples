@@ -1,6 +1,6 @@
 # Auth API Example
 
-A TypeScript authentication API built with the [Zoltra framework](https://github.com/zoltrajs/zoltra), demonstrating JWT-based authentication patterns with middleware support.
+A TypeScript authentication API built with the [Zoltra](https://github.com/zoltrajs/zoltra), demonstrating JWT-based authentication patterns with middleware support.
 
 ## Overview
 
@@ -19,15 +19,7 @@ This project showcases a modern authentication API implementation using:
 
 ## Installation & Setup
 
-1. **Clone the repository** (or use this example as reference)
-
-2. **Install dependencies:**
-
-   ```bash
-   npm install
-   ```
-
-3. **Generate JWT Secret** (Required):
+1. **Generate JWT Secret** (Required):
 
    ```bash
    npm run gen-secret
@@ -35,16 +27,14 @@ This project showcases a modern authentication API implementation using:
 
    This command generates a secure `JWT_AUTH_SECRET` and adds it to your `.env` file.
 
-4. **Configure Environment Variables:**
+2. **Configure Environment Variables:**
    The `.env` file should contain:
 
    ```env
-   PORT=8000
-   NODE_ENV=development
    JWT_AUTH_SECRET="your-generated-secret-here"
    ```
 
-5. **Start the development server:**
+3. **Start the development server:**
 
    ```bash
    npm run dev
@@ -56,7 +46,7 @@ This project showcases a modern authentication API implementation using:
    npm start
    ```
 
-The API will be available at `http://localhost:8000`
+The API will be available at `http://localhost:5000`
 
 ## API Endpoints
 
@@ -67,7 +57,7 @@ The API will be available at `http://localhost:8000`
 Welcome endpoint
 
 ```bash
-curl http://localhost:8000/
+curl http://localhost:5000/
 ```
 
 **Response:**
@@ -83,7 +73,7 @@ curl http://localhost:8000/
 Simple hello world endpoint
 
 ```bash
-curl http://localhost:8000/hello
+curl http://localhost:5000/hello
 ```
 
 **Response:**
@@ -110,7 +100,7 @@ Authenticate user and receive JWT token
 **Example:**
 
 ```bash
-curl -X POST http://localhost:8000/auth/login \
+curl -X POST http://localhost:5000/auth/login \
   -H "Content-Type: application/json" \
   -d '{"username": "admin", "password": "pass"}'
 ```
@@ -147,7 +137,7 @@ Authorization: Bearer <your-jwt-token>
 **Example:**
 
 ```bash
-curl http://localhost:8000/user/profile \
+curl http://localhost:5000/user/profile \
   -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9..."
 ```
 
@@ -233,7 +223,7 @@ sequenceDiagram
 
 | Variable          | Required | Description                 | Example                            |
 | ----------------- | -------- | --------------------------- | ---------------------------------- |
-| `PORT`            | No       | Server port (default: 5000) | `8000`                             |
+| `PORT`            | No       | Server port (default: 5000) | `5000`                             |
 | `NODE_ENV`        | No       | Environment mode            | `development`                      |
 | `JWT_AUTH_SECRET` | **Yes**  | JWT signing secret          | Generated via `npm run gen-secret` |
 
@@ -244,7 +234,7 @@ sequenceDiagram
 1. **Login to get token:**
 
 ```bash
-TOKEN=$(curl -s -X POST http://localhost:8000/auth/login \
+TOKEN=$(curl -s -X POST http://localhost:5000/auth/login \
   -H "Content-Type: application/json" \
   -d '{"username": "admin", "password": "pass"}' \
   | jq -r '.data')
@@ -253,7 +243,7 @@ TOKEN=$(curl -s -X POST http://localhost:8000/auth/login \
 2. **Use token to access protected route:**
 
 ```bash
-curl http://localhost:8000/user/profile \
+curl http://localhost:5000/user/profile \
   -H "Authorization: Bearer $TOKEN"
 ```
 
@@ -263,10 +253,10 @@ curl http://localhost:8000/user/profile \
 
 ```bash
 # Login
-http POST localhost:8000/auth/login username=admin password=pass
+http POST localhost:5000/auth/login username=admin password=pass
 
 # Access protected route
-http GET localhost:8000/user/profile Authorization:"Bearer <token>"
+http GET localhost:5000/user/profile Authorization:"Bearer <token>"
 ```
 
 **Using Postman:**
