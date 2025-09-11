@@ -1,7 +1,7 @@
 <div align="center">
   <img src=".gh-assets/logo.png" alt="Zoltra Logo" width="120" height="120">
   
-  # **Zoltra Examples**
+  # **Zoltra Templates**
   
   ### *A comprehensive collection of example projects and templates built with the Zoltra framework*
   
@@ -23,7 +23,7 @@
 
 This repository contains a curated collection of example projects demonstrating various features and use cases of the Zoltra framework:
 
-### 📁 **Available Examples**
+### 📁 **Available Templates**
 
 | Example                 | Description                                                                        | Tech Stack                    | Status          |
 | ----------------------- | ---------------------------------------------------------------------------------- | ----------------------------- | --------------- |
@@ -36,7 +36,7 @@ This repository contains a curated collection of example projects demonstrating 
 1. **Clone the repository**
 
    ```bash
-   git clone https://github.com/zoltrajs/examples.git
+   git clone https://github.com/zoltrajs/templates.git
    cd examples
    ```
 
