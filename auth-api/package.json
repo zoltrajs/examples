@@ -1,6 +1,7 @@
 {
-  "name": "auth-api-example",
+  "name": "auth-api-template",
   "version": "0.1.0",
+  "description": "Auth API template for Zoltra framework applications",
   "main": "./dist/app.js",
   "scripts": {
     "dev": "zoltra dev:ts",

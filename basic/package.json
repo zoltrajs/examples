@@ -1,7 +1,7 @@
 {
-  "name": "default-example",
+  "name": "basic-template",
   "version": "0.1.0",
-  "description": "",
+  "description": "A basic template for Zoltra applications",
   "main": "./dist/app.js",
   "scripts": {
     "dev": "zoltra dev:ts",

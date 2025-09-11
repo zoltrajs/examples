@@ -1,7 +1,7 @@
 {
-  "name": "websocket-example",
+  "name": "websocket-template",
   "version": "0.1.0",
-  "description": "",
+  "description": "WebSocket template for Zoltra framework applications",
   "main": "./dist/app.js",
   "scripts": {
     "dev": "zoltra dev:ts",
