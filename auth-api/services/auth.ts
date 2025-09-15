@@ -1,4 +1,4 @@
-import { IContext, NextFn } from "zoltra";
+import { IContext, NextFunction } from "zoltra";
 import jwt, { JwtPayload } from "jsonwebtoken";
 
 export class AuthService {
@@ -8,7 +8,7 @@ export class AuthService {
     this.secret = secret;
   }
 
-  async handle(context: IContext, next: NextFn) {
+  async handle(context: IContext, next: NextFunction) {
     const authHeader = context.headers.authorization;
 
     if (!authHeader) {

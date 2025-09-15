@@ -5,10 +5,10 @@ export default async function handler(context: IContext) {
     .status(200)
     .json({ message: "Welcome to your profile", user: context.user });
 }
-
+ 
 export const middlewares = defineMiddlewares([
   {
-    handler: (context, next) => {
+    handle: (context, next) => {
       context.service("auth").handle(context, next);
     },
   },
